@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kishan Maharana | API-Centric Backend Developer</title>
+    <title>Kishan Maharana | Software Engineer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhurFZM9n2OgHBrhLGO-IqWzr8AJ2MVQmj1-PBBg-fvJcbmxP_oyB0aQOvoVY4f9D9iLHOTLx3Zn32s0ZEJIKejwHL0hNBAebIv0rNPLXtYl_XU_NSwGPs1su3ZH4ZGnX1GlthqGuEQNA6YTX6jIi5kWjAyQX_MskzifuMnWmoEZJ4BnqwJUc7GT0JhukRX/s16000/1703862582322%20(1).jpg"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,30 +24,58 @@
         color: #f0f4f8;
         font-family: "Fira Code", monospace;
       }
+      #skillsContainer .progress {
+        height: 20px;
+        background-color: #2a2e35;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      #skillsContainer .progress-bar {
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
 
       .navbar {
         background-color: #1e2229;
       }
-
       .hero {
-        background-color: #0d1117;
+        position: relative;
+        background: radial-gradient(
+            circle at top left,
+            rgba(96, 165, 250, 0.15),
+            transparent
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(255, 255, 255, 0.05),
+            transparent
+          ),
+          #0d1117;
         padding: 100px 0;
         color: #60a5fa;
         text-align: center;
         animation: fadeIn 2s ease-in;
+        overflow: hidden;
       }
-
+      .hero > .container {
+        position: relative;
+        z-index: 1;
+      }
       .hero h1 {
         font-size: 3rem;
+        margin-bottom: 0.5rem;
       }
-
+      .hero .my-name {
+        font-size: 1.5rem;
+        color: #f0f4f8;
+        margin-top: 10px;
+      }
       .section-title {
         border-left: 5px solid #60a5fa;
         padding-left: 10px;
         font-weight: bold;
         margin-bottom: 20px;
       }
-
       .api-terminal {
         background-color: #1f252f;
         border: 1px solid #60a5fa;
@@ -51,7 +85,6 @@
         white-space: pre-wrap;
         animation: terminalLoad 1s ease-in-out;
       }
-
       .json-viewer {
         background-color: #10161c;
         border: 1px solid #60a5fa;
@@ -60,33 +93,27 @@
         font-family: "Fira Code", monospace;
         color: #f0f4f8;
       }
-
       .json-key {
         color: #60a5fa;
       }
-
       .json-string {
         color: #9fe6a0;
       }
-
       .json-indent {
         margin-left: 20px;
       }
-
       footer {
         background-color: #1e2229;
         color: #94a3b8;
         text-align: center;
         padding: 20px 0;
       }
-
       .icon-box {
         font-size: 2rem;
         color: #60a5fa;
         text-align: center;
         padding: 10px;
       }
-
       .profile-img {
         width: 200px;
         height: 200px;
@@ -96,7 +123,6 @@
         margin: 20px auto;
         display: block;
       }
-
       .interactive-terminal {
         background-color: #1f252f;
         color: #60a5fa;
@@ -107,7 +133,6 @@
         height: 30vh;
         overflow-y: auto;
       }
-
       .interactive-terminal input {
         background: transparent;
         border: none;
@@ -115,54 +140,44 @@
         outline: none;
         width: 100%;
       }
-
       .interactive-output {
         margin-top: 10px;
         white-space: pre-wrap;
       }
-
       .skills-icons i {
         font-size: 2rem;
       }
-
       .progress-bar {
         transition: width 1s ease-in-out;
       }
-
       @keyframes fadeIn {
         from {
           opacity: 0;
           transform: translateY(-20px);
         }
-
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
-
       @keyframes terminalLoad {
         0% {
           opacity: 0;
           transform: scaleY(0);
         }
-
         100% {
           opacity: 1;
           transform: scaleY(1);
         }
       }
-
       @media (min-width: 992px) {
         .main-content {
           display: flex;
           gap: 30px;
         }
-
         .main-left {
           flex: 2;
         }
-
         .main-right {
           flex: 1;
         }
@@ -173,7 +188,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Kishan Maharana</a>
+        <a class="navbar-brand" href="#">&nbsp;</a>
       </div>
     </nav>
 
@@ -184,6 +199,7 @@
           alt="Profile Image"
           class="profile-img"
         />
+        <div class="my-name">Kishan Maharana</div>
         <h1>&#123; Software Engineer &#125;</h1>
         <p>
           Laravel | PHP | Kafka | REST APIs | WebSocket | MySQL | PostgreSQL
@@ -575,8 +591,8 @@
         <h2 class="section-title">Interactive Terminal</h2>
         <div class="interactive-terminal">
           <div>
-            &gt; Hi, I am Kishan. Ask me about my skills, hobbies, experience, or
-            projects, contact.
+            &gt; Hi, I am Kishan. Ask me about my skills, hobbies, experience,
+            or projects, contact.
           </div>
           <input
             type="text"
@@ -658,22 +674,43 @@
           percent: 60,
           color: "bg-primary",
         },
-        { name: "Git", icon: "fab fa-git-alt", percent: 85, color: "bg-dark" },
+        {
+          name: "Git",
+          icon: "fab fa-git-alt",
+          percent: 85,
+          color: "bg-secondary",
+        },
       ];
 
       skills.sort((a, b) => b.percent - a.percent);
       const container = document.getElementById("skillsContainer");
       skills.forEach((skill) => {
         const skillBlock = document.createElement("div");
-        skillBlock.className = "mb-3";
+        skillBlock.className =
+          "mb-3 p-3 rounded bg-dark border border-secondary shadow-sm";
+
+        const level =
+          skill.percent >= 85
+            ? "Expert"
+            : skill.percent >= 70
+            ? "Intermediate"
+            : "Beginner";
+
         skillBlock.innerHTML = `
-        <strong><i class="${skill.icon} me-2"></i>${skill.name}</strong>
-        <div class="progress">
-          <div class="progress-bar ${skill.color}" role="progressbar" style="width: 0%" data-width="${skill.percent}">
-            ${skill.percent}%
-          </div>
-        </div>
-      `;
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <div>
+        <i class="${skill.icon} me-2 text-info"></i>
+        <strong class="text-light">${skill.name}</strong>
+      </div>
+      <span class="badge rounded-pill bg-primary small">${level}</span>
+    </div>
+    <div class="progress" role="progressbar" aria-label="${skill.name} skill bar">
+      <div class="progress-bar ${skill.color}" style="width: 0%" data-width="${skill.percent}">
+        ${skill.percent}%
+      </div>
+    </div>
+  `;
+
         container.appendChild(skillBlock);
       });
 
