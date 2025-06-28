@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +13,11 @@
       color: #f0f4f8;
       font-family: 'Fira Code', monospace;
     }
+
     .navbar {
       background-color: #1e2229;
     }
+
     .hero {
       background-color: #0d1117;
       padding: 100px 0;
@@ -22,15 +25,18 @@
       text-align: center;
       animation: fadeIn 2s ease-in;
     }
+
     .hero h1 {
       font-size: 3rem;
     }
+
     .section-title {
       border-left: 5px solid #60a5fa;
       padding-left: 10px;
       font-weight: bold;
       margin-bottom: 20px;
     }
+
     .api-terminal {
       background-color: #1f252f;
       border: 1px solid #60a5fa;
@@ -40,6 +46,7 @@
       white-space: pre-wrap;
       animation: terminalLoad 1s ease-in-out;
     }
+
     .json-viewer {
       background-color: #10161c;
       border: 1px solid #60a5fa;
@@ -48,27 +55,33 @@
       font-family: 'Fira Code', monospace;
       color: #f0f4f8;
     }
+
     .json-key {
       color: #60a5fa;
     }
+
     .json-string {
       color: #9fe6a0;
     }
+
     .json-indent {
       margin-left: 20px;
     }
+
     footer {
       background-color: #1e2229;
       color: #94a3b8;
       text-align: center;
       padding: 20px 0;
     }
+
     .icon-box {
       font-size: 2rem;
       color: #60a5fa;
       text-align: center;
       padding: 10px;
     }
+
     .profile-img {
       width: 120px;
       height: 120px;
@@ -78,6 +91,7 @@
       margin: 20px auto;
       display: block;
     }
+
     .interactive-terminal {
       background-color: #1f252f;
       color: #60a5fa;
@@ -88,6 +102,7 @@
       height: 30vh;
       overflow-y: auto;
     }
+
     .interactive-terminal input {
       background: transparent;
       border: none;
@@ -95,38 +110,61 @@
       outline: none;
       width: 100%;
     }
+
     .interactive-output {
       margin-top: 10px;
       white-space: pre-wrap;
     }
+
     .skills-icons i {
       font-size: 2rem;
     }
+
     .progress-bar {
       transition: width 1s ease-in-out;
     }
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes terminalLoad {
-      0% { opacity: 0; transform: scaleY(0); }
-      100% { opacity: 1; transform: scaleY(1); }
+      0% {
+        opacity: 0;
+        transform: scaleY(0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scaleY(1);
+      }
     }
+
     @media (min-width: 992px) {
       .main-content {
         display: flex;
         gap: 30px;
       }
+
       .main-left {
         flex: 2;
       }
+
       .main-right {
         flex: 1;
       }
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
@@ -136,9 +174,11 @@
 
   <section class="hero">
     <div class="container">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhurFZM9n2OgHBrhLGO-IqWzr8AJ2MVQmj1-PBBg-fvJcbmxP_oyB0aQOvoVY4f9D9iLHOTLx3Zn32s0ZEJIKejwHL0hNBAebIv0rNPLXtYl_XU_NSwGPs1su3ZH4ZGnX1GlthqGuEQNA6YTX6jIi5kWjAyQX_MskzifuMnWmoEZJ4BnqwJUc7GT0JhukRX/s16000/1703862582322%20(1).jpg" alt="Profile Image" class="profile-img">
-      <h1>&#123; API Engineer &#125;</h1>
-      <p>Laravel | Kafka | REST APIs | WebSocket | PostgreSQL</p>
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhurFZM9n2OgHBrhLGO-IqWzr8AJ2MVQmj1-PBBg-fvJcbmxP_oyB0aQOvoVY4f9D9iLHOTLx3Zn32s0ZEJIKejwHL0hNBAebIv0rNPLXtYl_XU_NSwGPs1su3ZH4ZGnX1GlthqGuEQNA6YTX6jIi5kWjAyQX_MskzifuMnWmoEZJ4BnqwJUc7GT0JhukRX/s16000/1703862582322%20(1).jpg"
+        alt="Profile Image" class="profile-img">
+      <h1>&#123; Software Engineer &#125;</h1>
+      <p>Laravel | PHP | Kafka | REST APIs | WebSocket | MySQL | PostgreSQL</p>
     </div>
   </section>
 
@@ -146,36 +186,92 @@
     <div class="main-left">
       <h2 class="section-title">About</h2>
       <div class="api-terminal mb-4">
-        Experienced Laravel Developer with 5+ years of expertise in web-based MVC pattern applications, RESTful API development, and Kafka-based services. Strong knowledge of optimized API design, versioning, and modularized Laravel structures. Proficient in HTML, CSS, JS, Bootstrap, and AJAX. Skilled in backend development, database optimization, and real-time data updates using WebSockets.
+        Experienced Laravel Developer with 5+ years of expertise in web-based MVC pattern applications, RESTful API
+        development, and Kafka-based services. Strong knowledge of optimized API design, versioning, and modularized
+        Laravel structures. Proficient in HTML, CSS, JS, Bootstrap, and AJAX. Skilled in backend development, database
+        optimization, and real-time data updates using WebSockets.
       </div>
 
       <h2 class="section-title">Work Experience</h2>
       <div class="json-viewer mb-4">
         <div><span class="json-key">"Software Engineer"</span>: &#123;</div>
         <div class="json-indent">
-          <span class="json-key">"Company"</span>: <span class="json-string">"Rishabh Software"</span>,<br/>
-          <span class="json-key">"Location"</span>: <span class="json-string">"Vadodara, Gujarat, India"</span>,<br/>
-          <span class="json-key">"Duration"</span>: <span class="json-string">"Apr 2025 - Present"</span>,<br/>
+          <span class="json-key">"Company"</span>: <span class="json-string">"Rishabh Software"</span>,<br />
+          <span class="json-key">"Location"</span>: <span class="json-string">"Vadodara, Gujarat, India"</span>,<br />
+          <span class="json-key">"Duration"</span>: <span class="json-string">"Apr 2025 - Present"</span>,<br />
           <span class="json-key">"Responsibilities"</span>: [
           <ul>
-            <li><span class="json-string">"Developed RESTful APIs and enhanced server-side performance"</span></li>
-            <li><span class="json-string">"Worked on Kafka-based services and PostgreSQL"</span></li>
-            <li><span class="json-string">"Delivered AdTech-focused projects in Agile team"</span></li>
+            <li><span class="json-string">"Developed and enhanced RESTful APIs; resolved critical server-side issues and
+                performance bottlenecks."</span></li>
+            <li><span class="json-string">"Worked on extending and modifying existing Kafka-based services as per
+                evolving business requirements."</span></li>
+            <li><span class="json-string">"Involved in backend development using Laravel and PostgreSQL."</span></li>
+            <li><span class="json-string">"Followed clean code architecture principles to ensure scalable and
+                maintainable codebase."</span></li>
+            <li><span class="json-string">"Contributed to an AdTech project with a focus on data-driven performance and
+                efficiency."</span></li>
+            <li><span class="json-string">"Collaborated within a cross-functional Agile team to deliver robust and
+                timely solutions."</span></li>
           </ul>
           ]
         </div>
-        <div>&#125;,</div><br/>
+        <div>&#125;,</div><br />
 
         <div><span class="json-key">"Software Developer"</span>: &#123;</div>
         <div class="json-indent">
-          <span class="json-key">"Company"</span>: <span class="json-string">"Codebuddy Pvt. Ltd."</span>,<br/>
-          <span class="json-key">"Location"</span>: <span class="json-string">"Kolkata, West Bengal, India"</span>,<br/>
-          <span class="json-key">"Duration"</span>: <span class="json-string">"Oct 2023 - Apr 2025"</span>,<br/>
+          <span class="json-key">"Company"</span>: <span class="json-string">"Codebuddy Pvt. Ltd."</span>,<br />
+          <span class="json-key">"Location"</span>: <span class="json-string">"Kolkata, West Bengal,
+            India"</span>,<br />
+          <span class="json-key">"Duration"</span>: <span class="json-string">"Oct 2023 - Apr 2025"</span>,<br />
           <span class="json-key">"Responsibilities"</span>: [
           <ul>
-            <li><span class="json-string">"Integrated APIs and UIs with OAuth"</span></li>
-            <li><span class="json-string">"Implemented payment gateways, WebSockets, Docker"</span></li>
-            <li><span class="json-string">"Utilized AI tools like ChatGPT & Gemini"</span></li>
+            <li><span class="json-string">"Developed and integrated both APIs and UI components for seamless user
+                experiences."</span></li>
+            <li><span class="json-string">"Directly collaborated with clients to understand requirements and deliver
+                tailored solutions."</span></li>
+            <li><span class="json-string">"Integrated authentication and data-sharing features with platforms like
+                Google, Facebook, GitHub,
+                YouTube, and Google Drive."</span></li>
+            <li><span class="json-string">"Implemented Stripe payment gateway for secure and efficient
+                transactions."</span></li>
+            <li><span class="json-string">"Worked with APIs like Rev API and Embedrocks for enhanced
+                functionality."</span></li>
+            <li><span class="json-string">"AI tools such as ChatGPT and Gemini, tailoring solutions to project
+                requirements."</span></li>
+            <li><span class="json-string">"Implemented Laravel event listeners and job queues to enhance system
+                performance."</span></li>
+            <li><span class="json-string">"Optimized database queries and integrated WebSockets for real-time data
+                updates."</span></li>
+            <li><span class="json-string">"Proficient in troubleshooting and optimizing server-side processes."</span>
+            </li>
+            <li><span class="json-string">"Hands-on experience in working with Docker across multiple projects."</span>
+            </li>
+            <li><span class="json-string">"Basic experience with Vue.js and Node.js for expanding project
+                capabilities."</span></li>
+          </ul>
+          ]
+        </div>
+        <div>&#125;</div>
+
+        <div><span class="json-key">"Software Developer"</span>: &#123;</div>
+        <div class="json-indent">
+          <span class="json-key">"Company"</span>: <span class="json-string">"ValueCoders"</span>,<br />
+          <span class="json-key">"Location"</span>: <span class="json-string">"Gurugram, Haryana, India"</span>,<br />
+          <span class="json-key">"Duration"</span>: <span class="json-string">"Mar 2020 - Oct 2023"</span>,<br />
+          <span class="json-key">"Responsibilities"</span>: [
+          <ul>
+            <li><span class="json-string">"API development, versioning, error handling, and server level
+                debugging."</span></li>
+            <li><span class="json-string">"Integrated Stripe payment gateway to manage smooth payment processing for
+                users."</span></li>
+            <li><span class="json-string">"Working on service-repository patterns for smooth business logic
+                implementation."</span></li>
+            <li><span class="json-string">"Working on Vue.js for Frontend Integration."</span></li>
+            <li><span class="json-string">"Managing a team of junior employees."</span></li>
+            <li><span class="json-string">"Amazon AWS S3 integration for required services to decrease server
+                load."</span></li>
+            <li><span class="json-string">"worked on query optimization and socket integration to show real-time
+                data."</span></li>
           </ul>
           ]
         </div>
@@ -186,7 +282,7 @@
       <div class="json-viewer mb-4">
         <div><span class="json-key">"Workstatus"</span>: &#123;</div>
         <div class="json-indent">
-          <span class="json-key">"Type"</span>: <span class="json-string">"Workforce Management"</span>,<br/>
+          <span class="json-key">"Type"</span>: <span class="json-string">"Workforce Management"</span>,<br />
           <span class="json-key">"Features"</span>: [
           <ul>
             <li><span class="json-string">"Per-org database creation via MySQL procedures"</span></li>
@@ -195,10 +291,10 @@
           </ul>
           ]
         </div>
-        <div>&#125;,</div><br/>
+        <div>&#125;,</div><br />
         <div><span class="json-key">"Cotysh"</span>: &#123;</div>
         <div class="json-indent">
-          <span class="json-key">"Type"</span>: <span class="json-string">"E-Commerce Platform"</span>,<br/>
+          <span class="json-key">"Type"</span>: <span class="json-string">"E-Commerce Platform"</span>,<br />
           <span class="json-key">"Features"</span>: [
           <ul>
             <li><span class="json-string">"SEO-optimized T-shirt listings"</span></li>
@@ -212,7 +308,7 @@
 
       <h2 class="section-title">Education</h2>
       <div class="api-terminal mb-4">
-        <strong>MCA</strong> – Institute of Management & IT, Cuttack (2018 - 2020)<br/>
+        <strong>MCA</strong> – Institute of Management & IT, Cuttack (2018 - 2020)<br />
         <strong>BCA</strong> – Government Autonomous College, Phulbani (2015 - 2018)
       </div>
     </div>
@@ -300,4 +396,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
