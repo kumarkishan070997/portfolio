@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishan Maharana | API-Centric Backend Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0b0f14;
+      color: #f0f4f8;
+      font-family: 'Fira Code', monospace;
+    }
+    .navbar {
+      background-color: #1e2229;
+    }
+    .hero {
+      background-color: #0d1117;
+      padding: 100px 0;
+      color: #60a5fa;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .section-title {
+      border-left: 5px solid #60a5fa;
+      padding-left: 10px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .api-terminal {
+      background-color: #1f252f;
+      border: 1px solid #60a5fa;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 15px;
+      white-space: pre-wrap;
+      animation: terminalLoad 1s ease-in-out;
+    }
+    .json-viewer {
+      background-color: #10161c;
+      border: 1px solid #60a5fa;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Fira Code', monospace;
+      color: #f0f4f8;
+    }
+    .json-key {
+      color: #60a5fa;
+    }
+    .json-string {
+      color: #9fe6a0;
+    }
+    .json-indent {
+      margin-left: 20px;
+    }
+    footer {
+      background-color: #1e2229;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .icon-box {
+      font-size: 2rem;
+      color: #60a5fa;
+      text-align: center;
+      padding: 10px;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #60a5fa;
+      margin: 20px auto;
+      display: block;
+    }
+    .interactive-terminal {
+      background-color: #1f252f;
+      color: #60a5fa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #60a5fa;
+      font-family: 'Fira Code', monospace;
+      height: 30vh;
+      overflow-y: auto;
+    }
+    .interactive-terminal input {
+      background: transparent;
+      border: none;
+      color: #60a5fa;
+      outline: none;
+      width: 100%;
+    }
+    .interactive-output {
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+    .skills-icons i {
+      font-size: 2rem;
+    }
+    .progress-bar {
+      transition: width 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes terminalLoad {
+      0% { opacity: 0; transform: scaleY(0); }
+      100% { opacity: 1; transform: scaleY(1); }
+    }
+    @media (min-width: 992px) {
+      .main-content {
+        display: flex;
+        gap: 30px;
+      }
+      .main-left {
+        flex: 2;
+      }
+      .main-right {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kishan Maharana</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhurFZM9n2OgHBrhLGO-IqWzr8AJ2MVQmj1-PBBg-fvJcbmxP_oyB0aQOvoVY4f9D9iLHOTLx3Zn32s0ZEJIKejwHL0hNBAebIv0rNPLXtYl_XU_NSwGPs1su3ZH4ZGnX1GlthqGuEQNA6YTX6jIi5kWjAyQX_MskzifuMnWmoEZJ4BnqwJUc7GT0JhukRX/s16000/1703862582322%20(1).jpg" alt="Profile Image" class="profile-img">
+      <h1>&#123; API Engineer &#125;</h1>
+      <p>Laravel | Kafka | REST APIs | WebSocket | PostgreSQL</p>
+    </div>
+  </section>
+
+  <section class="container my-5 main-content">
+    <div class="main-left">
+      <h2 class="section-title">About</h2>
+      <div class="api-terminal mb-4">
+        Experienced Laravel Developer with 5+ years of expertise in web-based MVC pattern applications, RESTful API development, and Kafka-based services. Strong knowledge of optimized API design, versioning, and modularized Laravel structures. Proficient in HTML, CSS, JS, Bootstrap, and AJAX. Skilled in backend development, database optimization, and real-time data updates using WebSockets.
+      </div>
+
+      <h2 class="section-title">Work Experience</h2>
+      <div class="json-viewer mb-4">
+        <div><span class="json-key">"Software Engineer"</span>: &#123;</div>
+        <div class="json-indent">
+          <span class="json-key">"Company"</span>: <span class="json-string">"Rishabh Software"</span>,<br/>
+          <span class="json-key">"Location"</span>: <span class="json-string">"Vadodara, Gujarat, India"</span>,<br/>
+          <span class="json-key">"Duration"</span>: <span class="json-string">"Apr 2025 - Present"</span>,<br/>
+          <span class="json-key">"Responsibilities"</span>: [
+          <ul>
+            <li><span class="json-string">"Developed RESTful APIs and enhanced server-side performance"</span></li>
+            <li><span class="json-string">"Worked on Kafka-based services and PostgreSQL"</span></li>
+            <li><span class="json-string">"Delivered AdTech-focused projects in Agile team"</span></li>
+          </ul>
+          ]
+        </div>
+        <div>&#125;,</div><br/>
+
+        <div><span class="json-key">"Software Developer"</span>: &#123;</div>
+        <div class="json-indent">
+          <span class="json-key">"Company"</span>: <span class="json-string">"Codebuddy Pvt. Ltd."</span>,<br/>
+          <span class="json-key">"Location"</span>: <span class="json-string">"Kolkata, West Bengal, India"</span>,<br/>
+          <span class="json-key">"Duration"</span>: <span class="json-string">"Oct 2023 - Apr 2025"</span>,<br/>
+          <span class="json-key">"Responsibilities"</span>: [
+          <ul>
+            <li><span class="json-string">"Integrated APIs and UIs with OAuth"</span></li>
+            <li><span class="json-string">"Implemented payment gateways, WebSockets, Docker"</span></li>
+            <li><span class="json-string">"Utilized AI tools like ChatGPT & Gemini"</span></li>
+          </ul>
+          ]
+        </div>
+        <div>&#125;</div>
+      </div>
+
+      <h2 class="section-title">Projects</h2>
+      <div class="json-viewer mb-4">
+        <div><span class="json-key">"Workstatus"</span>: &#123;</div>
+        <div class="json-indent">
+          <span class="json-key">"Type"</span>: <span class="json-string">"Workforce Management"</span>,<br/>
+          <span class="json-key">"Features"</span>: [
+          <ul>
+            <li><span class="json-string">"Per-org database creation via MySQL procedures"</span></li>
+            <li><span class="json-string">"Cron-based analytics"</span></li>
+            <li><span class="json-string">"API performance optimizations"</span></li>
+          </ul>
+          ]
+        </div>
+        <div>&#125;,</div><br/>
+        <div><span class="json-key">"Cotysh"</span>: &#123;</div>
+        <div class="json-indent">
+          <span class="json-key">"Type"</span>: <span class="json-string">"E-Commerce Platform"</span>,<br/>
+          <span class="json-key">"Features"</span>: [
+          <ul>
+            <li><span class="json-string">"SEO-optimized T-shirt listings"</span></li>
+            <li><span class="json-string">"Stripe payment gateway"</span></li>
+            <li><span class="json-string">"WebSocket for real-time updates"</span></li>
+          </ul>
+          ]
+        </div>
+        <div>&#125;</div>
+      </div>
+
+      <h2 class="section-title">Education</h2>
+      <div class="api-terminal mb-4">
+        <strong>MCA</strong> – Institute of Management & IT, Cuttack (2018 - 2020)<br/>
+        <strong>BCA</strong> – Government Autonomous College, Phulbani (2015 - 2018)
+      </div>
+    </div>
+
+    <div class="main-right">
+      <h2 class="section-title">Interactive Terminal</h2>
+      <div class="interactive-terminal">
+        <div>&gt; Hi, I am Kishan. Ask me about my skills, experience, or projects.</div>
+        <input type="text" id="terminalInput" placeholder="Type a command... (e.g. skills)" />
+        <div class="interactive-output" id="terminalOutput"></div>
+      </div>
+
+      <h2 class="section-title mt-4">Skills</h2>
+      <div id="skillsContainer"></div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kishan Maharana — Built with Laravel, Fueled by APIs ⚙️
+  </footer>
+
+  <script>
+    const skills = [
+      { name: "Laravel", icon: "fab fa-laravel", percent: 90, color: "bg-danger" },
+      { name: "PHP", icon: "fab fa-php", percent: 85, color: "bg-primary" },
+      { name: "RESTful APIs", icon: "fas fa-code", percent: 90, color: "bg-success" },
+      { name: "PostgreSQL/MySQL", icon: "fas fa-database", percent: 80, color: "bg-info" },
+      { name: "JavaScript", icon: "fab fa-js", percent: 80, color: "bg-warning text-dark" },
+      { name: "Vue.js", icon: "fab fa-vuejs", percent: 75, color: "bg-success" },
+      { name: "WebSocket", icon: "fas fa-cloud", percent: 75, color: "bg-primary" },
+      { name: "Kafka", icon: "fas fa-stream", percent: 70, color: "bg-secondary" },
+      { name: "Docker", icon: "fab fa-docker", percent: 65, color: "bg-info" },
+      { name: "HTML5", icon: "fab fa-html5", percent: 85, color: "bg-danger" },
+      { name: "CSS3", icon: "fab fa-css3-alt", percent: 80, color: "bg-primary" },
+      { name: "Git", icon: "fab fa-git-alt", percent: 85, color: "bg-dark" },
+    ];
+
+    skills.sort((a, b) => b.percent - a.percent);
+    const container = document.getElementById('skillsContainer');
+    skills.forEach(skill => {
+      const skillBlock = document.createElement('div');
+      skillBlock.className = 'mb-3';
+      skillBlock.innerHTML = `
+        <strong><i class="${skill.icon} me-2"></i>${skill.name}</strong>
+        <div class="progress">
+          <div class="progress-bar ${skill.color}" role="progressbar" style="width: 0%" data-width="${skill.percent}">
+            ${skill.percent}%
+          </div>
+        </div>
+      `;
+      container.appendChild(skillBlock);
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          bar.style.width = bar.dataset.width + '%';
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.6 });
+
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+      observer.observe(bar);
+    });
+
+    const terminalInput = document.getElementById('terminalInput');
+    const terminalOutput = document.getElementById('terminalOutput');
+    const commands = {
+      skills: `Laravel, PHP, Kafka, PostgreSQL, MySQL, REST API, WebSocket, JavaScript, Vue.js, Docker, HTML/CSS`,
+      experience: `5+ years working in Laravel API development across companies like Rishabh Software, Codebuddy, ValueCoders.`,
+      projects: `Workstatus: scalable DB structure; Cotysh: E-com platform with real-time updates; Admin Panel improvements.`,
+      help: `Available commands: skills, experience, projects, help`
+    };
+    terminalInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        const input = terminalInput.value.trim().toLowerCase();
+        const response = commands[input] || 'Command not found. Type "help" for list of commands.';
+        terminalOutput.innerHTML = `<span style="color:#facc15">$ ${input}</span><br>${response}<br>` + terminalOutput.innerHTML;
+        terminalInput.value = '';
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
