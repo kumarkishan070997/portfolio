@@ -1,0 +1,163 @@
+body {
+  background-color: #0b0f14;
+  color: #f0f4f8;
+  font-family: "Fira Code", monospace;
+}
+#skillsContainer .progress {
+  height: 20px;
+  background-color: #2a2e35;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#skillsContainer .progress-bar {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: #1e2229;
+}
+.hero {
+  position: relative;
+  background: radial-gradient(
+      circle at top left,
+      rgba(96, 165, 250, 0.15),
+      transparent
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    ),
+    #0d1117;
+  padding: 100px 0;
+  color: #60a5fa;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+  overflow: hidden;
+}
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero .my-name {
+  font-size: 1.5rem;
+  color: #f0f4f8;
+  margin-top: 10px;
+}
+.section-title {
+  border-left: 5px solid #60a5fa;
+  padding-left: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.api-terminal {
+  background-color: #1f252f;
+  border: 1px solid #60a5fa;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  white-space: pre-wrap;
+  animation: terminalLoad 1s ease-in-out;
+}
+.json-viewer {
+  background-color: #10161c;
+  border: 1px solid #60a5fa;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+  color: #f0f4f8;
+}
+.json-key {
+  color: #60a5fa;
+}
+.json-string {
+  color: #9fe6a0;
+}
+.json-indent {
+  margin-left: 20px;
+}
+footer {
+  background-color: #1e2229;
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px 0;
+}
+.icon-box {
+  font-size: 2rem;
+  color: #60a5fa;
+  text-align: center;
+  padding: 10px;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #60a5fa;
+  margin: 20px auto;
+  display: block;
+}
+.interactive-terminal {
+  background-color: #1f252f;
+  color: #60a5fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #60a5fa;
+  font-family: "Fira Code", monospace;
+  height: 30vh;
+  overflow-y: auto;
+}
+.interactive-terminal input {
+  background: transparent;
+  border: none;
+  color: #60a5fa;
+  outline: none;
+  width: 100%;
+}
+.interactive-output {
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+.skills-icons i {
+  font-size: 2rem;
+}
+.progress-bar {
+  transition: width 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes terminalLoad {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+@media (min-width: 992px) {
+  .main-content {
+    display: flex;
+    gap: 30px;
+  }
+  .main-left {
+    flex: 2;
+  }
+  .main-right {
+    flex: 1;
+  }
+}
