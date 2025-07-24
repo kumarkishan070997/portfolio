@@ -138,3 +138,83 @@ terminalInput.addEventListener("keydown", function (e) {
     terminalInput.value = "";
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const timeline = anime.timeline({
+    easing: "easeOutElastic(1, .8)",
+    duration: 2000,
+  });
+
+  const startDate = new Date("2020-02-01");
+  const now = new Date();
+
+  let years = now.getFullYear() - startDate.getFullYear();
+  let months = now.getMonth() - startDate.getMonth();
+  let days = now.getDate() - startDate.getDate();
+
+  if (days < 0) {
+    months--;
+    const previousMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+    days += previousMonth.getDate();
+  }
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  const pad = (val) => val.toString().padStart(2, "0");
+
+  // Animate counters with dynamic values
+  timeline
+    .add({
+      targets: "#years",
+      textContent: years,
+      round: 1,
+      update: (anim) => {
+        document.getElementById("years").textContent = pad(
+          anim.animations[0].currentValue
+        );
+      },
+      begin: () => showUnit("unit-years"),
+    })
+    .add(
+      {
+        targets: "#months",
+        textContent: months,
+        round: 1,
+        update: (anim) => {
+          document.getElementById("months").textContent = pad(
+            anim.animations[0].currentValue
+          );
+        },
+        begin: () => showUnit("unit-months"),
+      },
+      "-=1200"
+    )
+    .add(
+      {
+        targets: "#days",
+        textContent: days,
+        round: 1,
+        update: (anim) => {
+          document.getElementById("days").textContent = pad(
+            anim.animations[0].currentValue
+          );
+        },
+        begin: () => showUnit("unit-days"),
+      },
+      "-=1200"
+    );
+
+  // Function to scale and fade in each timer unit
+  function showUnit(id) {
+    anime({
+      targets: `#${id}`,
+      scale: [0.8, 1],
+      opacity: [0, 1],
+      duration: 800,
+      easing: "easeOutExpo",
+    });
+  }
+});

@@ -19,13 +19,11 @@
       rel="stylesheet"
     />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link href="style.css" rel="stylesheet" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
 
   <body>
@@ -417,35 +415,50 @@
 
         <h2 class="section-title">Education</h2>
         <div class="api-terminal mb-4">
-        <div class="education-item mb-2" style="display: flex; align-items: center; gap: 8px;">
-          <i class="fas fa-university" style="color: #fff;font-size: 20px;"></i>
-          <span style="margin-left: 10px;"><strong>MCA</strong> – Institute of Management & IT, Cuttack (2018 - 2020)</span>
-        </div>
-        <div class="education-item" style="display: flex; align-items: center; gap: 8px;">
-          <i class="fas fa-school" style="color: #fff;"></i>
-          <span style="margin-left: 10px;"><strong>BCA</strong> – Government Autonomous College, Phulbani (2015 - 2018)</span>
-        </div>
+          <div
+            class="education-item mb-2"
+            style="display: flex; align-items: center; gap: 8px"
+          >
+            <i
+              class="fas fa-university"
+              style="color: #fff; font-size: 20px"
+            ></i>
+            <span style="margin-left: 10px"
+              ><strong>MCA</strong> – Institute of Management & IT, Cuttack
+              (2018 - 2020)</span
+            >
+          </div>
+          <div
+            class="education-item"
+            style="display: flex; align-items: center; gap: 8px"
+          >
+            <i class="fas fa-school" style="color: #fff"></i>
+            <span style="margin-left: 10px"
+              ><strong>BCA</strong> – Government Autonomous College, Phulbani
+              (2015 - 2018)</span
+            >
+          </div>
         </div>
       </div>
 
       <div class="main-right">
         <h2 class="section-title">Total Experience</h2>
         <div class="experience-counter">
-    <div class="timer-container">
-      <div class="timer-unit" id="unit-years">
-        <span id="years" class="timer-value">0</span>
-        <div class="timer-label">Years</div>
-      </div>
-      <div class="timer-unit" id="unit-months">
-        <span id="months" class="timer-value">0</span>
-        <div class="timer-label">Months</div>
-      </div>
-      <div class="timer-unit" id="unit-days">
-        <span id="days" class="timer-value">0</span>
-        <div class="timer-label">Days</div>
-      </div>
-    </div>
-  </div>
+          <div class="timer-container">
+            <div class="timer-unit" id="unit-years">
+              <span id="years" class="timer-value">0</span>
+              <div class="timer-label">Years</div>
+            </div>
+            <div class="timer-unit" id="unit-months">
+              <span id="months" class="timer-value">0</span>
+              <div class="timer-label">Months</div>
+            </div>
+            <div class="timer-unit" id="unit-days">
+              <span id="days" class="timer-value">0</span>
+              <div class="timer-label">Days</div>
+            </div>
+          </div>
+        </div>
         <h2 class="section-title mt-4">Interactive Terminal</h2>
         <div class="interactive-terminal">
           <div>
@@ -460,12 +473,8 @@
           <div class="interactive-output" id="terminalOutput"></div>
         </div>
 
-        
-
         <h2 class="section-title mt-4">Skills</h2>
         <div id="skillsContainer"></div>
-
-        
       </div>
     </section>
 
@@ -475,73 +484,5 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-     <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const timeline = anime.timeline({ easing: 'easeOutElastic(1, .8)', duration: 2000 });
-
-    const startDate = new Date('2020-02-01');
-    const now = new Date();
-
-    let years = now.getFullYear() - startDate.getFullYear();
-    let months = now.getMonth() - startDate.getMonth();
-    let days = now.getDate() - startDate.getDate();
-
-    if (days < 0) {
-      months--;
-      const previousMonth = new Date(now.getFullYear(), now.getMonth(), 0);
-      days += previousMonth.getDate();
-    }
-
-    if (months < 0) {
-      years--;
-      months += 12;
-    }
-
-    const pad = (val) => val.toString().padStart(2, '0');
-
-    // Animate counters with dynamic values
-    timeline
-      .add({
-        targets: '#years',
-        textContent: years,
-        round: 1,
-        update: anim => {
-          document.getElementById('years').textContent = pad(anim.animations[0].currentValue);
-        },
-        begin: () => showUnit('unit-years'),
-      })
-      .add({
-        targets: '#months',
-        textContent: months,
-        round: 1,
-        update: anim => {
-          document.getElementById('months').textContent = pad(anim.animations[0].currentValue);
-        },
-        begin: () => showUnit('unit-months'),
-      }, '-=1200')
-      .add({
-        targets: '#days',
-        textContent: days,
-        round: 1,
-        update: anim => {
-          document.getElementById('days').textContent = pad(anim.animations[0].currentValue);
-        },
-        begin: () => showUnit('unit-days'),
-      }, '-=1200');
-
-    // Function to scale and fade in each timer unit
-    function showUnit(id) {
-      anime({
-        targets: `#${id}`,
-        scale: [0.8, 1],
-        opacity: [0, 1],
-        duration: 800,
-        easing: 'easeOutExpo'
-      });
-    }
-  });
-</script>
-
-
   </body>
 </html>
