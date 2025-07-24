@@ -161,3 +161,48 @@ footer {
     flex: 1;
   }
 }
+.experience-counter {
+      text-align: center;
+      background: #1e1e1e;
+      border-radius: 16px;
+      padding: 40px 60px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid #2f2f2f;
+    }
+
+    .experience-counter h2 {
+      font-size: 2rem;
+      color: #00ffc3;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+
+    .timer-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .timer-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: scale(0.8);
+      opacity: 0;
+    }
+
+    .timer-value {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #9fe6a0;
+      line-height: 1;
+      min-width: 80px;
+    }
+
+    .timer-label {
+      margin-top: 10px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #bbb;
+      letter-spacing: 2px;
+    }
